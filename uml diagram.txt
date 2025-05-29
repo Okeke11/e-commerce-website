@@ -1,0 +1,53 @@
++-------------------+
+|      User         |
++-------------------+
+| - id: int         |
+| - name: string    |
+| - email: string   |
+| - password: string|
++-------------------+
+          |
+          | 1
+          |
+          |------------------+
+                              |*
+                        +------------------------+
+                        |   Cart                 |
+                        +------------------------+
+                        | - id: int              |
+                        | - user_id: int (FK)    |
+                        | - product_name: string |
+                        | - product_price: float |
+                        | - product_image: string|
+                        | - qty: int             |
+                        | - total_price: float   |
+                        | - product_code: string |
+                        +------------------------+
+
+                        +------------------------+
+                        |  Product               |
+                        +------------------------+
+                        | - id: int              |
+                        | - name: string         |
+                        | - price: float         |
+                        | - image: string        |
+                        | - description: text    |
+                        | - product_code: string |
+                        +------------------------+
+
+          | 1
+          |
+          |-------------------+
+                               |*
+                        +----------------------+
+                        |  Order    	       |
+                        +----------------------+
+                        | - id: int 	       |
+                        | - name: string       | 
+                        | - email: string      |
+                        | - phone: string      |
+                        | - address: text      |
+                        | - pmode: string      |
+                        | - products: text     |
+                        | - amount_paid: float |
+                        +----------------------+
