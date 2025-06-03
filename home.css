@@ -1,8 +1,13 @@
-
 .navbar {
     background: rgb(53, 56, 50);
     padding-right: 15px;
     padding-left: 15px;
+}
+@media(max-width: 768px){
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
 .navdiv {
     display: flex;
@@ -210,5 +215,3 @@ width: 100%;
 .allrights{
 text-align: center;
 }
-
-
